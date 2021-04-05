@@ -20,9 +20,6 @@ blue: #15616d
 beige: #ffecd1
 orange: #ff7d00
 brown: #78290f
-
---- 
-
 */
 
 nav {
@@ -132,7 +129,7 @@ section h3 {
 
 .about-me-container p {
   text-align: left;
-  text-indent: 25px;
+  /* text-indent: 25px; */
   line-height: 150%;
 }
 
