@@ -12,8 +12,8 @@ function App() {
     <div className='about-me-div'>
       <p>
         Eric Bowman is a composer, producer, and software engineer from Kalamazoo, MI. In 2017, Eric earned
-        a Doctorate of Musical Arts from University of Miami where he made a living playing trombone and teaching.
-        As a performer, Eric won 2 international solo competitions and shared the stage with a variety of notable musicians and composers including
+        a Doctorate of Musical Arts from University of Miami, where he made a living playing trombone and teaching.
+        As a performer, Eric won two international solo competitions and shared the stage with a variety of notable musicians and composers including
         John Williams, Quincy Jones, Gloria Estefan, Steve Miller, various symphony orchestras, and various jazz ensembles.
       </p>
       <p>
@@ -22,7 +22,7 @@ function App() {
         Eric's eclectic performing experience and music education enable him to make memorable and fitting music that
         conveys a diverse range of emotions in a variety of genres.
       </p>
-      <p>Eric currently lives in the greater Boston area where he enjoys cooking, exercising, and playing with his dog, Bear
+      <p>Eric currently lives in the Greater Boston area where he enjoys cooking, exercising, and playing with his dog, Bear
       </p>
     </div>
   )
@@ -47,9 +47,9 @@ function App() {
           <pre>Eric Bowman Music</pre>
         </div>
         <div className='links'>
-          <span onClick={() => onClickLink('about')}>About</span>
-          <span onClick={() => onClickLink('portfolio')}>Portfolio</span>
-          <span onClick={() => onClickLink('contact')}>Contact</span>
+          <span onClick={() => onClickLink('about')}>ABOUT</span>
+          <span onClick={() => onClickLink('portfolio')}>PORTFOLIO</span>
+          <span onClick={() => onClickLink('contact')}>CONTACT</span>
         </div>
       </nav>
       <header onClick={() => onClickLink('header')} ref={headerRef}>
@@ -59,7 +59,7 @@ function App() {
       </header>
       <main>
       <section ref={portfolioRef} className='portfolio'>
-          <h3>Portfolio</h3>
+          <h3>PORTFOLIO</h3>
           <div className='portfolio-div'>
             <div className='video-container'>
               <p>Spring</p>
@@ -94,15 +94,15 @@ function App() {
           </div>
       </section>
         <section ref={aboutRef} className='about'>
-          <h3>About Me</h3>
+          <h3>ABOUT</h3>
           <div className='about-me-container'>
             <img src={profPic} alt='photo' />
             {aboutMe}
           </div>
         </section>
         <section ref={contactRef} className='contact'>
-          <h3>Contact</h3>
-          <p>ericjbowman@gmail.com</p>
+          <h3>CONTACT</h3>
+          <a href='mailto:ericjbowman@gmail.com' target='_blank'>ericjbowman@gmail.com</a>
         </section>
       </main>
     </div>
