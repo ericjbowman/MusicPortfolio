@@ -10,6 +10,10 @@ code {
     monospace;
 }
 
+* {
+  font-family: 'Spartan', sans-serif;
+}
+
 /* 
 black: #001524
 blue: #15616d
@@ -41,7 +45,7 @@ nav .logo {
   align-items: center;
 }
 
-nav .logo span {
+nav .logo pre {
   /* font-family: monospace; */
   font-size: 1.5em;
 }
@@ -57,7 +61,7 @@ nav img {
   margin-right: 1em;
 }
 
-nav span {
+nav span, nav pre {
   color: white;
 }
 
@@ -94,5 +98,87 @@ section {
 
 section h3 {
   margin: 0;
+  font-size: 1.5em;
 }
 
+.about-me-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-me-container img {
+  width: 25%;
+  min-width: 5em;
+  height: auto;
+  margin-top: 1em;
+  margin-right: 2em;
+}
+
+.about-me-container p {
+  text-align: left;
+  text-indent: 25px;
+  line-height: 150%;
+}
+
+.about-me-div {
+  max-width: 50em;
+}
+
+.portfolio-div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  margin-top: 1.5em;
+}
+
+.video-container {
+  background-color: #78290f;
+  padding: 0 0 0.25em;
+  box-sizing: border-box;
+}
+
+.video-container p {
+  color: white;
+}
+
+.portfolio-vid {
+  width: 100%;
+  min-height: 15em;
+}
+
+.contact {
+  background-color: #15616d;
+}
+
+.contact h3, .contact p {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .portfolio-div {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-div {
+    grid-template-rows: repeat(1fr, 6);
+    grid-template-columns: 1fr;
+  }
+  .about-me-container img {
+    display: none;
+    width: 0;
+  }
+
+  .links span {
+    margin-left: 1em;
+  }
+
+  .logo pre {
+    display: none;
+  }
+}
