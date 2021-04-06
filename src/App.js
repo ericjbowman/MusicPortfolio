@@ -1,13 +1,17 @@
 import './App.css'
 import eric from './images/Eric.png'
 import profPic from './images/Profpic2.jpg'
-import React, {Fragment} from 'react'
+import React, {Fragment, useEffect, useState} from 'react'
 
 function App() {
   const portfolioRef = React.createRef()
   const contactRef = React.createRef()
   const aboutRef = React.createRef()
   const headerRef = React.createRef()
+  const [menu, setMenu] = useState(false)
+  const [isClicked, setIsClicked] = useState(false)
+  const [areLinks, setAreLinks] = useState(false)
+  const hamburgerRef = React.createRef()
   const aboutMe = (
     <div className='about-me-div'>
       <p>
@@ -29,7 +33,9 @@ function App() {
 
   const onClickLink = (link) => {
     if (link === 'portfolio') {
-      portfolioRef.current.scrollIntoView({behavior: 'smooth'})
+      const yOffset = 90
+      const y = portfolioRef.current.getBoundingClientRect().top + window.pageYOffset - yOffset
+      window.scrollTo({top: y, behavior: 'smooth'});
     } else if (link === 'about') {
       aboutRef.current.scrollIntoView({behavior: 'smooth'})
     } else if (link === 'contact') {
@@ -37,6 +43,26 @@ function App() {
     } else if (link === 'header') {
       headerRef.current.scrollIntoView({behavior: 'smooth'})
     }
+  }
+
+  const middleLineClass = () => {
+    // return isClicked ? (menu ? 'path' : 'path2') : 'default'
+    return menu ? 'path' : 'path2'
+  }
+
+  useEffect(() => {
+    if (isClicked && hamburgerRef) {
+      setMenu(!menu)
+    }
+  }, [isClicked])
+
+  console.log('middleLineClass', middleLineClass())
+
+  const containerRef = React.createRef()
+
+  const onClickHamburger = () => {
+    setAreLinks(true)
+    setMenu(!menu)
   }
 
   return (
@@ -50,6 +76,53 @@ function App() {
           <span onClick={() => onClickLink('about')}>ABOUT</span>
           <span onClick={() => onClickLink('portfolio')}>PORTFOLIO</span>
           <span onClick={() => onClickLink('contact')}>CONTACT</span>
+        </div>
+        {areLinks &&
+          <div className={menu ? 'hamburger-links slideDown' : 'hamburger-links slideUp'}>
+            <span onClick={() => onClickLink('about')}>ABOUT</span>
+            <span onClick={() => onClickLink('portfolio')}>PORTFOLIO</span>
+            <span onClick={() => onClickLink('contact')}>CONTACT</span>
+          </div>
+        }
+        <div class={menu ? 'container active' : "container"} onClick={onClickHamburger}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" viewBox="0 0 200 200">
+            <g stroke-width="6.5" stroke-linecap="round">
+              <path
+                d="M72 82.286h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#fff"
+              />
+              <path
+                d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                fill="none"
+                stroke="#fff"
+              />
+              <path
+                d="M72 125.143h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#fff"
+              />
+              <path
+                d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                fill="none"
+                stroke="#fff"
+              />
+              <path
+                d="M100.75 82.286h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#fff"
+              />
+              <path
+                d="M100.75 125.143h28.75"
+                fill="#009100"
+                fill-rule="evenodd"
+                stroke="#fff"
+              />
+            </g>
+          </svg>
         </div>
       </nav>
       <header onClick={() => onClickLink('header')} ref={headerRef}>
