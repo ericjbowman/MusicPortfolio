@@ -32,12 +32,15 @@ function App() {
   )
 
   const onClickLink = (link) => {
+    setMenu(false)
     if (link === 'portfolio') {
       const yOffset = 90
       const y = portfolioRef.current.getBoundingClientRect().top + window.pageYOffset - yOffset
       window.scrollTo({top: y, behavior: 'smooth'});
     } else if (link === 'about') {
-      aboutRef.current.scrollIntoView({behavior: 'smooth'})
+      const yOffset = 90
+      const y = aboutRef.current.getBoundingClientRect().top + window.pageYOffset - yOffset
+      window.scrollTo({top: y, behavior: 'smooth'});
     } else if (link === 'contact') {
       contactRef.current.scrollIntoView({behavior: 'smooth'})
     } else if (link === 'header') {
@@ -69,7 +72,7 @@ function App() {
     <div className="App">
       <nav>
         <div className='logo'>
-          <img src={eric} alt='Eric' />
+          <img onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}src={eric} alt='Eric' />
           <pre>Eric Bowman Music</pre>
         </div>
         <div className='links'>

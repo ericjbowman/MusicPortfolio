@@ -62,6 +62,7 @@ nav .links {
 nav img {
   height: 4em;
   margin-right: 1em;
+  cursor: pointer;
 }
 
 nav span, nav pre {
