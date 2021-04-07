@@ -137,32 +137,32 @@ function App() {
             <div className='video-container'>
               <p>Spring</p>
               <iframe className='portfolio-vid' src="https://www.youtube.com/embed/NxQBMqcD2Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Rescore for chamber orchestra</p>
+              <p>Short Film Rescore</p>
+            </div>
+            <div className='video-container'>
+              <p>Mass Effect Andromeda</p>
+              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/LfZEdAKCAM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Linear Rescore</p>
             </div>
             <div className='video-container'>
               <p>Megaman 11</p>
-              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/Tv06ja-HSIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Rescore</p>
-            </div>
-            <div className='video-container'>
-              <p>Mass Effect</p>
-              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/Tv06ja-HSIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Rescore</p>
+              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/cpwQKn7ibaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Gameplay Rescore</p>
             </div>
             <div className='video-container'>
               <p>Ghost Runner</p>
-              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/Tv06ja-HSIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Rescore</p>
+              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/VmiCRaUXejM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Gameplay Rescore</p>
             </div>
             <div className='video-container'>
               <p>Neon Abyss</p>
-              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/Tv06ja-HSIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Rescore</p>
+              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/zR4u8kMhS3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Gameplay Rescore</p>
             </div>
             <div className='video-container'>
               <p>Fez</p>
-              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/Tv06ja-HSIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <p>Rescore</p>
+              <iframe className='portfolio-vid' src="https://www.youtube.com/embed/wyocXE-WYug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p>Gameplay Rescore</p>
             </div>
           </div>
       </section>
