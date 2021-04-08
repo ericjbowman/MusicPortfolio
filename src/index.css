@@ -159,7 +159,8 @@ section h3 {
 
 .portfolio-vid {
   width: 100%;
-  min-height: 15em;
+  /* min-height: 15em; */
+  height: calc(28vw - 3em);
 }
 
 .contact {
@@ -292,14 +293,42 @@ path:nth-child(6) {
   display: none;
 }
 
-@media only screen and (max-width: 1000px) {
-  .portfolio-div {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
+.portfolio-div {
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
+/* @media only screen and (max-width: 1000px) {
+  .portfolio {
+    padding: 2em 0 2em;
+  }
+
+  .portfolio-vid {
+    height: 56vw;
+  }
+} */
+
 @media only screen and (max-width: 600px) {
+  .demo-reel {
+    padding: 2em 0;
+    height: 56vw;
+    box-sizing: content-box;
+  }
+
+  .demo-reel-container {
+    height: calc(56.25vw + 4em);
+    max-height: calc(56.25vw + 4em);
+  }
+
+
+  .portfolio {
+    padding: 2em 0 2em;
+  }
+
+  .portfolio-vid {
+    height: 56vw;
+  }
+
   .portfolio-div {
     grid-template-rows: repeat(1fr, 6);
     grid-template-columns: 1fr;
