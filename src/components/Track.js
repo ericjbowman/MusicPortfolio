@@ -96,7 +96,10 @@ export default function Track(props) {
     console.log('canvas ref', canvasRef, canvasRef.current)
     window.addEventListener('resize', setWaveformWidth)
     setWaveformWidth()
-    // canvasRef.current.addEventListener('onmouseup', (e) => {
+    // setTimeout(() => {
+    //   setWaveformWidth()
+    // }, 500)
+    // canvasRef => {}.current.addEventListener('onmouseup', (e) => {
     //   onMouseUp(e, canvasRef.current)
     // })
     canvasRef.current.onmouseup = (e) => {
@@ -105,6 +108,11 @@ export default function Track(props) {
     const audio = document.getElementById(props.id)
     audio.addEventListener('ended', resetPlayHead)
   }, [])
+
+  useEffect(() => {
+    console.log('setting wave width')
+    setWaveformWidth()
+  }, [waveformWidthRef.current])
 
   function movePlayHead() {
     const audio = document.getElementById(props.id)
@@ -169,6 +177,9 @@ export default function Track(props) {
             <img
               className="unplayed-wave-img"
               src={props.waveImg} alt=''
+              // style={{
+              //   width: `${waveformWidthRef.current || 0}px`
+              // }}
             />
             <div
               ref={playedPortionRef}
@@ -177,9 +188,9 @@ export default function Track(props) {
               <img
                 className="played-wave-img"
                 src={props.waveImg} alt=''
-                style={{
-                  width: `${waveformWidthRef.current || 0}px`
-                }}
+                // style={{
+                //   width: `${waveformWidthRef.current || 0}px`
+                // }}
               />
             </div>
             <canvas

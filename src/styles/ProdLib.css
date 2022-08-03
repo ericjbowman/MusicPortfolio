@@ -67,5 +67,6 @@ nav > span {
 
 .track-container {
   /* width: 800px; */
+  width: 100%;
   padding: 24px;
 }

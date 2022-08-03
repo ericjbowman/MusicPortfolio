@@ -2,10 +2,24 @@ import '../styles/ProdLib.css'
 import {Link} from 'react-router-dom'
 import Track from './Track.js'
 import avatar from '../images/Avatar.png'
+
+// Images
 import gumshoe from '../images/Gumshoe.png'
 import pumpkin from '../images/pumpkin_cropped.png'
 import car from '../images/car.png'
 import wheat from '../images/Wheat.png'
+
+// tracks
+import totTrack from '../tracks/ToT_150bpm_Dmin_Master_08_02_22_20_41.mp3'
+import sumoCarsTrack from '../tracks/Sumo_Cars_04_14_22.mp3'
+import gumshoeTrack from '../tracks/Gumshoe_110bpm_Emin_Master_07_28_22_12_34.mp3'
+import elysiumTrack from '../tracks/Elysium_120bpm_Gmaj_Master_08_02_22_19_39.mp3'
+
+// Waveform images
+import totWave from '../waveforms/ToT_Waveform.png'
+import sumoCarsWave from '../waveforms/SumoCars_Waveform.png'
+import gumshoeWave from '../waveforms/Gumshoe_Waveform.png'
+import elysiumWave from '../waveforms/Elysium_Waveform.png'
 
 function ProdLib() {
   return (
@@ -25,11 +39,11 @@ function ProdLib() {
             name='Trick-or-Treat'
             id='1'
             image={pumpkin}
-            source={process.env.PUBLIC_URL + '/tracks/ToT_150bpm_Dmin_Master_08_02_22_20_41.mp3'}
+            source={totTrack}
             genre='Orchestral'
             keyCenter='Dmin'
             tempo='150'
-            waveImg={process.env.PUBLIC_URL + '/waveforms/ToT_Waveform.png'}
+            waveImg={totWave}
             tags={[
               'Orchestral', 'Halloween', 'Holidays', 'Scary', 'Fun',
               'Cinematic', 'Kids', 'Quirky', 'Playful', 'Comical',
@@ -40,11 +54,11 @@ function ProdLib() {
             name='Sumo Cars'
             id='2'
             image={car}
-            source={process.env.PUBLIC_URL + '/tracks/Sumo_Cars_04_14_22.mp3'}
+            source={sumoCarsTrack}
             genre='EDM'
             keyCenter='Cmaj'
             tempo='130'
-            waveImg={process.env.PUBLIC_URL + '/waveforms/SumoCars_Waveform.png'}
+            waveImg={sumoCarsWave}
             tags={[
               'EDM', 'House', 'Chiptune', 'Pop', 'Confident', 'Fun',
               'Party', 'Cool', 'Sports', 'Advertising', 'Gaming',
@@ -55,11 +69,11 @@ function ProdLib() {
             name='Gumshoe'
             id='3'
             image={gumshoe}
-            source={process.env.PUBLIC_URL + '/tracks/Gumshoe_110bpm_Emin_Master_07_28_22_12_34.mp3'}
+            source={gumshoeTrack}
             genre='Jazz'
             keyCenter='Emin'
             tempo='110'
-            waveImg={process.env.PUBLIC_URL + '/waveforms/Gumshoe_Waveform.png'}
+            waveImg={gumshoeWave}
             tags={[
               'Jazz', 'Swing', `1950s`, `1960s`, 'Cinematic',
               'Stealth', 'Sneaky', 'Crime', 'Detective', 'Mystery',
@@ -70,11 +84,11 @@ function ProdLib() {
             name='Elysium'
             id='4'
             image={wheat}
-            source={process.env.PUBLIC_URL + '/tracks/Elysium_120bpm_Gmaj_Master_08_02_22_19_39.mp3'}
+            source={elysiumTrack}
             genre='Orchestral'
             keyCenter='Gmaj'
             tempo='120'
-            waveImg={process.env.PUBLIC_URL + '/waveforms/Elysium_Waveform.png'}
+            waveImg={elysiumWave}
             tags={[
               'Orchestral', 'Harp', 'Strings', 'Peaceful', 'Hopeful',
               'Cinematic', 'Drama', 'Fantasy', 'Orchestral Fantasy',
