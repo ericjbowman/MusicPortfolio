@@ -1,13 +1,13 @@
 import '../styles/App.css'
 import React, {Fragment, useEffect, useState} from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {HashRouter, Switch, Route} from 'react-router-dom'
 import Home from './Home.js'
 import ProdLib from './ProdLib.js'
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route
             exact path='/alibiapp'
@@ -20,7 +20,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
   </div>
   )
 }
