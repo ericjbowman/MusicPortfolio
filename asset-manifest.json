@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.64f5e419.chunk.css",
-    "main.js": "/static/js/main.2371f550.chunk.js",
-    "main.js.map": "/static/js/main.2371f550.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.02617b5a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.02617b5a.js.map",
-    "static/js/2.e769a790.chunk.js": "/static/js/2.e769a790.chunk.js",
-    "static/js/2.e769a790.chunk.js.map": "/static/js/2.e769a790.chunk.js.map",
-    "static/js/3.b71ebae7.chunk.js": "/static/js/3.b71ebae7.chunk.js",
-    "static/js/3.b71ebae7.chunk.js.map": "/static/js/3.b71ebae7.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.64f5e419.chunk.css.map": "/static/css/main.64f5e419.chunk.css.map",
-    "static/js/2.e769a790.chunk.js.LICENSE.txt": "/static/js/2.e769a790.chunk.js.LICENSE.txt",
-    "static/media/Avatar.880fdff9.png": "/static/media/Avatar.880fdff9.png",
-    "static/media/Eric.880fdff9.png": "/static/media/Eric.880fdff9.png",
-    "static/media/Gumshoe.86eb93b2.png": "/static/media/Gumshoe.86eb93b2.png",
-    "static/media/Profpic2.ed3db10c.jpg": "/static/media/Profpic2.ed3db10c.jpg",
-    "static/media/Wheat.067f824d.png": "/static/media/Wheat.067f824d.png",
-    "static/media/car.651efa7b.png": "/static/media/car.651efa7b.png",
-    "static/media/pumpkin_cropped.9a71aae0.png": "/static/media/pumpkin_cropped.9a71aae0.png"
+    "main.css": "./static/css/main.64f5e419.chunk.css",
+    "main.js": "./static/js/main.06c5f23f.chunk.js",
+    "main.js.map": "./static/js/main.06c5f23f.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e58ef861.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e58ef861.js.map",
+    "static/js/2.e769a790.chunk.js": "./static/js/2.e769a790.chunk.js",
+    "static/js/2.e769a790.chunk.js.map": "./static/js/2.e769a790.chunk.js.map",
+    "static/js/3.b71ebae7.chunk.js": "./static/js/3.b71ebae7.chunk.js",
+    "static/js/3.b71ebae7.chunk.js.map": "./static/js/3.b71ebae7.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.64f5e419.chunk.css.map": "./static/css/main.64f5e419.chunk.css.map",
+    "static/js/2.e769a790.chunk.js.LICENSE.txt": "./static/js/2.e769a790.chunk.js.LICENSE.txt",
+    "static/media/Avatar.880fdff9.png": "./static/media/Avatar.880fdff9.png",
+    "static/media/Eric.880fdff9.png": "./static/media/Eric.880fdff9.png",
+    "static/media/Gumshoe.86eb93b2.png": "./static/media/Gumshoe.86eb93b2.png",
+    "static/media/Profpic2.ed3db10c.jpg": "./static/media/Profpic2.ed3db10c.jpg",
+    "static/media/Wheat.067f824d.png": "./static/media/Wheat.067f824d.png",
+    "static/media/car.651efa7b.png": "./static/media/car.651efa7b.png",
+    "static/media/pumpkin_cropped.9a71aae0.png": "./static/media/pumpkin_cropped.9a71aae0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.02617b5a.js",
+    "static/js/runtime-main.e58ef861.js",
     "static/js/2.e769a790.chunk.js",
     "static/css/main.64f5e419.chunk.css",
-    "static/js/main.2371f550.chunk.js"
+    "static/js/main.06c5f23f.chunk.js"
   ]
 }
