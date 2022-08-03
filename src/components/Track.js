@@ -12,6 +12,8 @@ export default function Track(props) {
   const waveformWidthRef = useRef()
   const tween1Ref = useRef()
   const tween2Ref = useRef()
+  const tween3Ref = useRef()
+  const tween4Ref = useRef()
   const trackCanvasContainerRef = useRef()
   const isPlayingRef = useRef()
   function setIsPlaying(data) {
@@ -24,6 +26,7 @@ export default function Track(props) {
   // const [playPosition, setPlayPosition] = useState(0)
   const canvasRef = useRef()
   const playedPortionRef = useRef()
+  const unplayedPortionRef = useRef()
   function onClickPlayPause() {
     console.log(waveformWidth)
     const audio = document.getElementById(props.id)
@@ -66,8 +69,10 @@ export default function Track(props) {
       console.log('skip time', skipTime)
       skipTo(skipTime)
       const playedPortion = playedPortionRef.current
+      const unplayedPortion = unplayedPortionRef.current
       gsap.killTweensOf(playedPortion);
       tween1Ref.current = gsap.set(playedPortion, {width: `${ratioOfCanvas * 100}%`, duration: 0, ease: 'none'})
+      tween3Ref.current = gsap.set(unplayedPortion, {width: `${100 - (ratioOfCanvas * 100)}%`, duration: 0, ease: 'none'})
       console.log('is playing?', isPlaying)
       if (isPlayingRef.current) {
         movePlayHead()
@@ -81,7 +86,9 @@ export default function Track(props) {
     setIsPlaying(false)
     // timeline.clear()
     const playedPortion = playedPortionRef.current
+    const unplayedPortion = unplayedPortionRef.current
     tween1Ref.current = gsap.to(playedPortion, {width: '0%', duration: 0, ease: 'none'})
+    tween3Ref.current = gsap.to(unplayedPortion, {width: '100%', duration: 0, ease: 'none'})
   }
 
   function setWaveformWidth() {
@@ -117,8 +124,10 @@ export default function Track(props) {
   function movePlayHead() {
     const audio = document.getElementById(props.id)
     const playedPortion = playedPortionRef.current
+    const unplayedPortion = unplayedPortionRef.current
     const duration = audio.duration - audio.currentTime
     tween2Ref.current = gsap.to(playedPortion, {width: '100%', duration: duration, ease: 'none'})
+    tween4Ref.current = gsap.to(unplayedPortion, {width: '0%', duration: duration, ease: 'none'})
   }
 
   useEffect(() => {
@@ -131,6 +140,9 @@ export default function Track(props) {
       audio.pause()
       if (tween2Ref.current) {
         tween2Ref.current.pause()
+      }
+      if (tween4Ref.current) {
+        tween4Ref.current.pause()
       }
     }
   }, [isPlaying])
@@ -184,15 +196,11 @@ export default function Track(props) {
             <div
               ref={playedPortionRef}
               className='track-canvas-played-portion'
-            >
-              <img
-                className="played-wave-img"
-                src={props.waveImg} alt=''
-                // style={{
-                //   width: `${waveformWidthRef.current || 0}px`
-                // }}
-              />
-            </div>
+            />
+            <div
+              ref={unplayedPortionRef}
+              className='track-canvas-unplayed-portion'
+            />
             <canvas
               className="track-canvas"
               id={props.id + '-canvas'}
