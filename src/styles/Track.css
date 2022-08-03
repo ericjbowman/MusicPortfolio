@@ -95,7 +95,9 @@
   height: 7.5em;
   z-index: 2;
   overflow: hidden;
-  backdrop-filter: invert(37%) sepia(80%) saturate(956%) hue-rotate(353deg) brightness(90%) contrast(89%);
+  border-right: 2px solid rgb(212, 117, 55);
+  /* backdrop-filter: invert(37%) sepia(80%) saturate(956%) hue-rotate(353deg) brightness(90%) contrast(89%); */
+  /* backdrop-filter: sepia(50%); */
 }
 
 .track-canvas-unplayed-portion {
