@@ -58,7 +58,7 @@ nav > span {
 .prodlib-main {
   margin-top: 96px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .flex {
@@ -67,6 +67,6 @@ nav > span {
 
 .track-container {
   /* width: 800px; */
-  width: 100%;
+  /* width: 100%; */
   padding: 24px;
 }
