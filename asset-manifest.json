@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MusicPortfolio/static/css/main.be9558cb.chunk.css",
-    "main.js": "/MusicPortfolio/static/js/main.97b02cb1.chunk.js",
-    "main.js.map": "/MusicPortfolio/static/js/main.97b02cb1.chunk.js.map",
+    "main.js": "/MusicPortfolio/static/js/main.dffe4930.chunk.js",
+    "main.js.map": "/MusicPortfolio/static/js/main.dffe4930.chunk.js.map",
     "runtime-main.js": "/MusicPortfolio/static/js/runtime-main.05199092.js",
     "runtime-main.js.map": "/MusicPortfolio/static/js/runtime-main.05199092.js.map",
     "static/js/2.997dc915.chunk.js": "/MusicPortfolio/static/js/2.997dc915.chunk.js",
@@ -13,10 +13,13 @@
     "static/css/main.be9558cb.chunk.css.map": "/MusicPortfolio/static/css/main.be9558cb.chunk.css.map",
     "static/js/2.997dc915.chunk.js.LICENSE.txt": "/MusicPortfolio/static/js/2.997dc915.chunk.js.LICENSE.txt",
     "static/media/Avatar.880fdff9.png": "/MusicPortfolio/static/media/Avatar.880fdff9.png",
+    "static/media/Elysium_120bpm_Gmaj_Master_08_02_22_19_39.2bf07c6b.mp3": "/MusicPortfolio/static/media/Elysium_120bpm_Gmaj_Master_08_02_22_19_39.2bf07c6b.mp3",
     "static/media/Eric.880fdff9.png": "/MusicPortfolio/static/media/Eric.880fdff9.png",
     "static/media/Gumshoe.86eb93b2.png": "/MusicPortfolio/static/media/Gumshoe.86eb93b2.png",
     "static/media/Gumshoe_Waveform.db7a49dc.png": "/MusicPortfolio/static/media/Gumshoe_Waveform.db7a49dc.png",
     "static/media/Profpic2.ed3db10c.jpg": "/MusicPortfolio/static/media/Profpic2.ed3db10c.jpg",
+    "static/media/Sumo_Cars_04_14_22.d845191a.mp3": "/MusicPortfolio/static/media/Sumo_Cars_04_14_22.d845191a.mp3",
+    "static/media/ToT_150bpm_Dmin_Master_08_02_22_20_41.9509b60b.mp3": "/MusicPortfolio/static/media/ToT_150bpm_Dmin_Master_08_02_22_20_41.9509b60b.mp3",
     "static/media/Wheat.067f824d.png": "/MusicPortfolio/static/media/Wheat.067f824d.png",
     "static/media/car.651efa7b.png": "/MusicPortfolio/static/media/car.651efa7b.png",
     "static/media/pumpkin_cropped.9a71aae0.png": "/MusicPortfolio/static/media/pumpkin_cropped.9a71aae0.png"
@@ -25,6 +28,6 @@
     "static/js/runtime-main.05199092.js",
     "static/js/2.997dc915.chunk.js",
     "static/css/main.be9558cb.chunk.css",
-    "static/js/main.97b02cb1.chunk.js"
+    "static/js/main.dffe4930.chunk.js"
   ]
 }
