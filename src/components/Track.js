@@ -161,7 +161,7 @@ export default function Track(props) {
           />
           <button
             className="play-pause"
-            onClick={onClickPlayPause}
+            onClickCapture={onClickPlayPause}
           >
             <img
               className='play-pause-img'

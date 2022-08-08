@@ -5,7 +5,7 @@ import Home from './Home.js'
 import ProdLib from './ProdLib.js'
 
 function App() {
-  console.log('deloyed at 3:43')
+  console.log('deloyed at 4:04')
   return (
     <div className='app-container'>
       <HashRouter>

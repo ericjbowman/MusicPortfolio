@@ -1,4 +1,13 @@
-html, body {
+* {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+html, body, #root {
   height: 100%;
   width: 100%;
 }
@@ -11,8 +20,12 @@ body {
   overflow: scroll;
 }
 
-#root, .app-container, .prodlib {
-  min-height: 100%;
+.app-container, .prodlib {
+  height: 100%;
+}
+
+.app-container {
+  height: 100%;
 }
 
 .prodlib {
