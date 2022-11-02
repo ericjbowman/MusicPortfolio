@@ -100,6 +100,7 @@ export default function Track(props) {
   }
 
   useEffect(() => {
+    gsap.ticker.lagSmoothing(false)
     console.log('canvas ref', canvasRef, canvasRef.current)
     window.addEventListener('resize', setWaveformWidth)
     setWaveformWidth()
