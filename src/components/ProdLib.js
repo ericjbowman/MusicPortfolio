@@ -29,7 +29,7 @@ function ProdLib() {
           <Link to='/'>
             <img alt="" src={avatar} />
           </Link>
-          <span>Eric Bowman Alibi Music Application</span>
+          <span>Eric Bowman Demos</span>
         </div>
         <span>ericjbowman@gmail.com</span>
       </nav>
