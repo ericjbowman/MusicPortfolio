@@ -16,6 +16,11 @@ function App() {
             <ProdLib />
           </Route>
           <Route
+            exact path='/demos'
+          >
+            <ProdLib />
+          </Route>
+          <Route
             path='/'
           >
             <Home />
