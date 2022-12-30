@@ -24,15 +24,20 @@ function Home() {
   )
 
   const onClickLink = (link) => {
+    console.log('link', link)
     setMenu(false)
     if (link === 'portfolio') {
       const yOffset = 90
-      const y = portfolioRef.current.getBoundingClientRect().top + window.pageYOffset - yOffset
-      window.scrollTo({top: y, behavior: 'smooth'});
+      const y = portfolioRef.current.getBoundingClientRect().top + document.body.scrollTop - yOffset
+      console.log('y', y)
+      document.body.scrollTo({top: y, behavior: 'smooth'});
+      // portfolioRef.current.scrollIntoView({behavior: 'smooth'})
     } else if (link === 'about') {
       const yOffset = 90
-      const y = aboutRef.current.getBoundingClientRect().top + window.pageYOffset - yOffset
-      window.scrollTo({top: y, behavior: 'smooth'});
+      const y = aboutRef.current.getBoundingClientRect().top + document.body.scrollTop - yOffset
+      console.log('y', y)
+      document.body.scrollTo({top: y, behavior: 'smooth'});
+      // aboutRef.current.scrollIntoView({behavior: 'smooth'})
     } else if (link === 'contact') {
       contactRef.current.scrollIntoView({behavior: 'smooth'})
     } else if (link === 'header') {
@@ -54,6 +59,10 @@ function Home() {
   console.log('middleLineClass', middleLineClass())
 
   const containerRef = React.createRef()
+
+  useEffect(() => {
+    console.log('are links, menu', areLinks, menu)
+  }, [areLinks, menu])
 
   const onClickHamburger = () => {
     setAreLinks(true)
@@ -81,11 +90,11 @@ function Home() {
         }
         <div class={menu ? 'container active' : "container"} onClick={onClickHamburger}>
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" viewBox="0 0 200 200">
-            <g stroke-width="6.5" stroke-linecap="round">
+            <g strokeWidth="6.5" strokeLinecap="round">
               <path
                 d="M72 82.286h28.75"
                 fill="#009100"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="#fff"
               />
               <path
@@ -96,7 +105,7 @@ function Home() {
               <path
                 d="M72 125.143h28.75"
                 fill="#009100"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="#fff"
               />
               <path
@@ -107,13 +116,13 @@ function Home() {
               <path
                 d="M100.75 82.286h28.75"
                 fill="#009100"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="#fff"
               />
               <path
                 d="M100.75 125.143h28.75"
                 fill="#009100"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 stroke="#fff"
               />
             </g>

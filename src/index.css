@@ -399,6 +399,7 @@ path:nth-child(6) {
     display: flex;
     position: fixed;
     top: 1em;
+    left: 0;
     background-color: #001524;
     width: 100%;
     flex-direction: column;

@@ -147,31 +147,31 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .tags {
+  .track .tags {
     display: none;
   }
   .track {
     height: 14.5em;
   }
   
-  .track-title {
+  .track .track-title {
     font-size: 16px;
   }
 
-  .play-pause {
+  .track .play-pause {
     margin-right: 3px;
   }
 
-  .track-meta-data {
+  .track .track-meta-data {
     margin-left: 10px;
   }
 
-  .play-pause-img {
+  .track .play-pause-img {
     height: 3em;
     width: 3em;
   }
 
-  nav span {
+  .track nav span {
     display: none;
   }
 }
@@ -181,7 +181,7 @@
     display: none;
   } */
 
-  .track-left {
+  .track .track-left {
     display: none;
   }
 }
